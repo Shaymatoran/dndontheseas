@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Navigation Room</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica|Meddon" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+<body>
+
+	<div id= "header">
+			<h1>Navigation Room</h1>
+	</div>
+	<div id="content"></div>
+	<div id="map">
+		<img src="Map4.jpg">
+		<div id="raven"></div>
+	</div>
+	<div id="quests">
+		<h2>Quests</h2>
+		<div id="questsbg">
+			<nav>
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Active: The First Delivery</button>
+					<div id="quest1" class="dropdown-content">
+						<p>Deliver the shipment of cursed swords to Rhyand in 10 days. Days remaining: 10</p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button onclick="myFunction2()" class="dropbtn">Explore!</button>
+					<div id="quest2" class="dropdown-content">
+						<p>Travel the seas to find adventure, glory, and loot!</p>
+					</div>
+				</div>					
+			</nav>
+		</div>
+	</div>
+	<div id="diagnostic">
+		
+	</div>
+	<div id="relations">
+		
+	</div>
+	<div id="loot">
+		
+	</div>
+		
+ 
+	<script>
+
+	function myFunction() {
+		document.getElementById("quest1").classList.toggle("show");
+	}
+	function myFunction2() {
+		document.getElementById("quest2").classList.toggle("show");
+	}
+
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+				}	
+			}
+		}
+	}
+</script>
+</body>

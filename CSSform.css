@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top img{ 
+	float:left;
+	width:20%;
+	height:20%;
+	}
+#top h1{
+		background-color:#3B60B1;
+		color: #cc7a00;
+		font-size: 3em;
+		}
+ul #list li{
+	display: inline;
+	color: red;
+	padding: 10px;
+	font-size: .5em;
+	}
+a:link{ 
+	color: #cc7a00;
+	}
+a:visited{
+		color:#FF5587
+		}
+#top{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start space-between;
+	background-color:#3B60B1;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	}
+body{
+	background-image: url("images/map.png");
+	background-repeat: repeat-x repeat-y;
+	
+	}
+	
+h1{
+	background-color:#3B60B1;
+	text-align: center;
+	color: #cc7a00;
+	font-size: 3em;
+	}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
