@@ -1,0 +1,17 @@
+<script>
+			var num = 4;
+			function pictureChangeUp(){
+				num = num - 3;
+				if(num == 1){
+					document.getElementByClassName("up").disabled = true;
+					document.getElementByClassName("up").src="updisabled.png";
+				}
+				document.getElementById("map").src="Map1.jpg";
+			}
+			
+</script>
+		<input type="image" class="up" src="up.png" onclick="pictureChangeUp()">
+<img id="map" src="Map4.jpg">
+
+
+
